@@ -14,9 +14,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void inicializaStartedService(View view) {
+        Intent intent = new Intent(this, StartedService.class);
+        startService(intent);
+        startService(intent);
+        startService(intent);
+        startService(intent);
+        startService(intent);
     }
 
     public void finalizaStartedService(View view) {
+        Intent intent = new Intent(this, StartedService.class);
+        stopService(intent);
     }
 
     public void inicializaBoundedService(View view) {
