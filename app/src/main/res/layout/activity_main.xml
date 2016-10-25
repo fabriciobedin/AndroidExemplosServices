@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="io.github.fabriciobedin.exemplosservices.MainActivity">
+
+    <Button
+        android:text="Inicializa Started Service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="inicializaStartedService"/>
+
+    <Button
+        android:text="Finaliza Started Service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="finalizaStartedService"/>
+
+    <Button
+        android:text="Inicializa Bounded Service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="inicializaBoundedService"/>
+
+    <Button
+        android:text="Chama Intent Service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="chamaIntentService"/>
+
+
+</LinearLayout>
