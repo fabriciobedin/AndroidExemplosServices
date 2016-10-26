@@ -14,7 +14,15 @@ import android.util.Log;
 public class BoundedService extends Service {
 
     public class MeuBinder extends Binder {
+        public BoundedService ownerService(){
+            return BoundedService.this;
+        }
 
+    }
+
+    public Double randomNumber(){
+        Double ramdom = (Double) Math.random();
+        return ramdom;
     }
 
     @Nullable
